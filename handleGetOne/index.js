@@ -12,10 +12,10 @@ exports.handler = async(event) => {
   const response = {statusCode: null, body: null};
 
   try {
-    
-    let personRecords = await personModel.query(event.queryStringParameters.id).exec();
+    let query = event.queryStringParameters.id;
+    let personRecord = await personModel.get(query);
     response.statusCode = 200;
-    response.body = JSON.stringify(personRecords);
+    response.body = JSON.stringify(personRecord);
 
   } catch (err) {
     console.log(err);

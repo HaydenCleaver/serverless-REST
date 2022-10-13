@@ -8,25 +8,26 @@
 
 ### Root URL
 
-[https://npjzz35lsf.execute-api.us-west-2.amazonaws.com/undefined/](https://npjzz35lsf.execute-api.us-west-2.amazonaws.com/undefined/)
+[https://npjzz35lsf.execute-api.us-west-2.amazonaws.com/Production](https://npjzz35lsf.execute-api.us-west-2.amazonaws.com/Production)
 
 ### Routes
 
 - `/people`
-  - Post: Requires name and id.
-  - Get All: No input
 - `/people/id`
-  - Delete: Requires id.
-  - Put: Requires id.
-  - Get One: Requires id. (Not working yet)
 
 ### Route Inputs
 
-- Post: Requires name and id.
-- Get All: No input
-- Delete: Requires id.
-- Put: Requires id.
-- Get One: Requires id.
+- `/people`
+  - Post: Requires name and id.
+  - Get All: No input
+<br>
+<br>
+- `/people/id/?id=<id>`
+  - Delete: Requires id.
+  - Put: Requires id.
+  - Get One: Requires id.
+
+- I'm going to go back later and figure out how to make this fit with normal query language.  I don't like the repition of 'id'.
 
 ### Route Outputs
 
